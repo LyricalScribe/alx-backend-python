@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-from typing import Iterable, Sequence, List, Tuple
-"""Function to give element length"""
 
+element_length =  __import__('9-element_length').element_length
 
-def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
-    """returns parameters"""
-    return [(i, len(i)) for i in lst]
-  
+print(element_length.__annotations__)
