@@ -8,6 +8,8 @@ from typing import List
 
 async def async_generator() -> List[float]:
     """Coroutine will loop 10 times"""
-    for i in range(10):
+    results = []
+    for _ in range(10):
         await asyncio.sleep(1)
-        yield random.uniform(0, 10)
+        results.append(random.uniform(0, 10))
+    return results
